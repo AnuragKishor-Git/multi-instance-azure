@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Checkout from Git'){
             steps{
-                git branch: 'main', url: 'https://github.com/AnuragKishor-Git/terraform-azure-lab.git'
+                git branch: 'main', url: 'https://github.com/AnuragKishor-Git/multi-instance-azure.git'
             }
         }
         stage("Sonarqube Analysis "){
