@@ -15,6 +15,7 @@ provider "azurerm" {
 resource "azurerm_resource_group" "rg" {
   name     = "azure-lab"
   location = var.az_region
+  count = 2
 
   tags = merge({ "Name" = "azure-lab" }, var.tags, )
 }
